@@ -1,0 +1,336 @@
+/*PERUSTYYLIT*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: rgb(28, 17, 102);
+    background-color: rgb(227, 229, 245);
+}
+
+.rajaus {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 h2 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px gray;
+}
+
+a {
+    color: rgb(45, 29, 78);
+    text-decoration: none;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    background: rgb(217, 216, 246);
+}
+
+.header p {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(191, 179, 179);
+    background-color: rgb(34, 34, 81);
+    max-width: 50%;
+}
+
+.header-sisalto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.paavalikko {
+    display: flex;
+    gap: 20px;
+}
+
+.paavalikko a {
+    padding: 8px 0;
+}
+
+/*hero */
+.hero {
+    padding: 30px 0;
+    color: white;
+    background-color: rgb(43, 0, 128);
+    background-image: url(avaruus3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.painikelinkki {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: rgb(34, 34, 81);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgb(191, 179, 179);
+    max-width: 50%;
+}
+
+/*gridin asetukset*/
+
+.areas {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main sidebar"
+        "footer footer";
+    gap: 20px;
+    grid-template-columns: 4fr 1fr;
+    box-sizing: border-box;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+    min-width: 0;
+}
+
+.sidebar {
+    align-self: start;
+    margin: 0 20px 0;
+    grid-area: sidebar;
+    background-color: rgb(208, 208, 241);
+    border: 1px solid rgb(60, 60, 60);
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 0;
+}
+
+
+.footer {
+    grid-area: footer
+}
+
+/* osioiden asetukset */
+
+.item {
+    background-color: rgb(208, 208, 241);
+    border: 1px solid rgb(60, 60, 60);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.lista {
+    margin: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+li {
+    margin: 5px;
+    margin-top: 5px;
+}
+
+.yhteystiedot {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(208, 208, 241);
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+/*Hampurilaisvalikko*/
+
+.valikko-checkbox {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0px;
+}
+
+.hampurilainen {
+    display: block;
+    margin-left: 20px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.paavalikko {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+}
+
+.valikko-checkbox:checked~.paavalikko {
+    display: flex;
+}
+
+/* etusivun mainin grid-asetukset */
+
+.kappaleet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/*Aurinko-sivu*/
+
+.main {
+    margin-left: 20px;
+}
+
+.video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 40px;
+}
+
+
+
+/*Tästä alkaa sisa- ja ulkoplaneettojen mainin css*/
+
+.kortit {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.kortti {
+    padding: 24px;
+    background-color: rgb(208, 208, 241);
+    border: 1px solid rgb(60, 60, 60);
+    border-radius: 10px;
+    min-width: 0;
+}
+
+.main img {
+    max-width: 100%;
+}
+
+
+/*kuvakaruselli alkaa */
+
+.kuvakaruselli {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.karuselli-item {
+    flex: 0 0 350px;
+    scroll-snap-align: start;
+    scroll-margin-inline: 50px;
+}
+
+.karuselli-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.karuselli-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.karuselli-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+.karuselli-nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*mobiilin asetukset */
+
+@media (max-width: 900px) {
+    .areas {
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "footer";
+    }
+    .kappaleet {
+        grid-template-columns: 1fr;
+    }
+    .kortit {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+  .kortit {
+    grid-template-columns: 1fr;
+  }
+      .hero {
+      background-image: none;
+    padding: 32px 0;
+  }
+  .valikko-checkbox {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0px;
+  }
+  .hampurilainen {
+    display: block;
+    margin-left: auto;
+    padding: 4px 10px;
+    border: 2px solid green;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
