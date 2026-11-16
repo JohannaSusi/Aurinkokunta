@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurinkokuntamme</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="favicon[1].ico" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" type="image/svg+xml">
 </head>
 
 <body>
@@ -85,9 +85,56 @@
                 <div>
                     <img src="media/kaikki planeetat.jpg" alt="Kuva josta näkyy planeettojen koko erot">
                 </div>
-                <div><audio src="media/ääni.mp3" controls autoplay muted loop controlslist="nodownload nofullscreen">Avaruuden
+                <div><audio src="media/ääni.mp3" controls autoplay muted loop
+                        controlslist="nodownload nofullscreen">Avaruuden
                         äänimaailmaa</audio>
                     <p>Avaruuden äänimaailmaa</p>
+                </div>
+                <div>
+                    <form>
+                    <h2>Tyytyväisyyskysely sivustolla vieraileville</h2>
+                    <p>Tähdellä (*) merkityt kentät ovat pakollisia</p>
+                    <fieldset>
+                        <legend>Yhteystiedot</legend>
+                        <div class="kentta">
+                            <label for="nimi">Nimi *</label>
+                            <input type="text" id="nimi" name="nimi" placeholder="Etunimi Sukunimi" autocomplete="name"
+                                maxlength="100" required="">
+                        </div>
+                        <div class="kentta">
+                            <label for="sposti">Sähköposti</label>
+                            <input type="email" id="sposti" name="sposti" placeholder="etunimi.sukunimi@domain.com"
+                                autocomplete="email" maxlength="100" required="">
+                        </div>
+                        <div>
+                            <label for="puh">Puhelinnumero</label>
+                            <input type="tel" id="puh" name="puh" placeholder="+358401234567" autocomplete="puh">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Kysely *</legend>
+                        <div>
+                            <label for="paiva">Milloin vierailit sivustolla?</label>
+                            <input type="date" id="paiva" name="paiva">
+                        </div>
+                        <div>
+                            <input type="checkbox" id="kysely" name="kysely" value="kylla">
+                            <label for="tyytyvaisyys">Koin sivuston hyödylliseksi ja opin uutta.</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="oppi" name="oppi" value="kylla">
+                            <label for="tyytyvaisyys">Sivusto ei ollut minua varten enkä oppinut uutta.</label>
+                        </div>
+                        <div class="kentta">
+                            <label for="viesti">Kirjoita lisätietoja</label>
+                            <textarea name="veisti" id="viesti" rows="4" placeholder="Kirjoita viestisi ..."></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="painikkeet">
+                <button type="submit">Lähetä</button>
+                <button type="reset" class="tyhjenna">Tyhjennä</button>
+            </form>
+            </div>
                 </div>
             </section>
         </main>
@@ -108,7 +155,7 @@
             <p> <a href="tel: +358501234567"></a> Puhelinnumero +358501234567 </p>
             <p> <a href="mailto: johanna.susineva@centria.fi">Sähköposti</a> </p>
             <p>&copy; JohannaSusi </p>
-            <p>(Lähde: Wikipedia)</p>
+            <p>(Tekstien lähde: Wikipedia, median lähde: Pixabay)</p>
         </section>
         </section>
 
