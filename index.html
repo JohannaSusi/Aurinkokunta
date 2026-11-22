@@ -15,10 +15,12 @@
             <section class="hero">
                 <div class="hero-sisalto header-sisalto rajaus">
                     <h1 id="paaotsikko">Aurinkokuntamme</h1>
-                    <p>Tällä sivustolla esittelemme Aurinkokuntamme. Aurinkokuntamme koostuu Auringosta, planeetoista, kääpiöplaneetoista,
+                    <p>Tällä sivustolla esittelemme Aurinkokuntamme. Aurinkokuntamme koostuu Auringosta, planeetoista,
+                        kääpiöplaneetoista,
                         kuista, asteroideista, komeetoista sekä meteoroideista. </p>
 
-                    <a class="painikelinkki" href="https://www.ursa.fi/etusivu.html">Tähtitieteellisen yhdistyksen Ursan sivut</a>
+                    <a class="painikelinkki" href="https://www.ursa.fi/etusivu.html">Tähtitieteellisen yhdistyksen Ursan
+                        sivut</a>
                 </div>
             </section>
         </header>
@@ -26,7 +28,7 @@
         <div class="nav">
             <input type="checkbox" id="valikko-auki" class="valikko-checkbox">
             <label for="valikko-auki" class="hampurilainen">
-                <span>&#9776</span>
+                <span>&#9776;</span>
             </label>
             <nav class="paavalikko">
                 <a href="#taivaankappaleet">Aurinkokuntamme taivaankappaleet</a>
@@ -82,58 +84,60 @@
                     <a href="muut.html">Lue lisää muista aurinkokuntamme taivaankappaleista</a>
                 </div>
                 <div>
-                    <img src="media/kaikki planeetat.jpg" alt="Kuva josta näkyy planeettojen kokoerot" width="1920" height="640">
+                    <img src="media/kaikki planeetat.jpg" alt="Kuva josta näkyy planeettojen kokoerot" width="1920"
+                        height="640">
                 </div>
+
+                <!-- validointi sanoi, että ääneen ei kuulu alt-teksti, jostain syystä tämä kuitenkin epäilytti ja otin riskin ja jätin tuon altin tuohon. Eri jos olisi ääniraita, jossa on puhetta ja tarvitsisi ihan transkription? -->
+
                 <div><audio src="media/ääni.mp3" controls muted loop
-                        controlslist="nodownload nofullscreen" alt="avaruuden äänimaailmaa, avaruusolioita ja kohinaa">Avaruuden
-                        äänimaailmaa</audio>
+                        alt="avaruuden äänimaailmaa, avaruusolioita ja kohinaa">Avaruuden äänimaailmaa</audio>
                     <p>Avaruuden äänimaailmaa</p>
                 </div>
                 <div>
                     <form>
-                    <h2>Tyytyväisyyskysely sivustolla vieraileville</h2>
-                    <p>Tähdellä (*) merkityt kentät ovat pakollisia</p>
-                    <fieldset>
-                        <legend>Yhteystiedot</legend>
-                        <div class="kentta">
-                            <label for="nimi">Nimi *</label>
-                            <input type="text" id="nimi" name="nimi" placeholder="Etunimi Sukunimi" autocomplete="name"
-                                maxlength="100" required="">
-                        </div>
-                        <div class="kentta">
-                            <label for="sposti">Sähköposti</label>
-                            <input type="email" id="sposti" name="sposti" placeholder="etunimi.sukunimi@domain.com"
-                                autocomplete="email" maxlength="100" required="">
-                        </div>
-                        <div>
-                            <label for="puh">Puhelinnumero</label>
-                            <input type="tel" id="puh" name="puh" placeholder="+358401234567" autocomplete="puh">
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Kysely *</legend>
-                        <div>
-                            <label for="paiva">Milloin vierailit sivustolla?</label>
-                            <input type="date" id="paiva" name="paiva">
-                        </div>
-                        <div>
-                            <input type="checkbox" id="kysely" name="kysely" value="kylla">
-                            <label for="tyytyvaisyys">Koin sivuston hyödylliseksi ja opin uutta.</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="oppi" name="oppi" value="kylla">
-                            <label for="tyytyvaisyys">Sivusto ei ollut minua varten enkä oppinut uutta.</label>
-                        </div>
-                        <div class="kentta">
-                            <label for="viesti">Kirjoita lisätietoja</label>
-                            <textarea name="viesti" id="viesti" rows="4" placeholder="Kirjoita viestisi ..."></textarea>
-                        </div>
-                    </fieldset>
-                    <div class="painikkeet">
-                <button type="submit">Lähetä</button>
-                <button type="reset" class="tyhjenna">Tyhjennä</button>
-            </form>
-            </div>
+                        <h2>Tyytyväisyyskysely sivustolla vieraileville</h2>
+                        <p>Tähdellä (*) merkityt kentät ovat pakollisia</p>
+                        <fieldset>
+                            <legend>Yhteystiedot</legend>
+                            <div class="kentta">
+                                <label for="nimi">Nimi *</label>
+                                <input type="text" id="nimi" name="nimi" placeholder="Etunimi Sukunimi"
+                                    autocomplete="name" maxlength="100" required="">
+                            </div>
+                            <div class="kentta">
+                                <label for="sposti">Sähköposti</label>
+                                <input type="email" id="sposti" name="sposti" placeholder="etunimi.sukunimi@domain.com"
+                                    autocomplete="email" maxlength="100" required="">
+                            </div>
+                            <div>
+                                <label for="puh">Puhelinnumero</label>
+                                <input type="tel" id="puh" name="puh" placeholder="+358401234567" autocomplete="tel">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Kysely *</legend>
+                            <div>
+                                <label for="paiva">Milloin vierailit sivustolla?</label>
+                                <input type="date" id="paiva" name="paiva">
+                            </div>
+                            <div>
+                                <input type="checkbox" id="kysely" name="kysely" value="kylla">
+                                <label for="tyytyvaisyys">Koin sivuston hyödylliseksi ja opin uutta.</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="oppi" name="oppi" value="kylla">
+                                <label for="tyytyvaisyys">Sivusto ei ollut minua varten enkä oppinut uutta.</label>
+                            </div>
+                            <div class="kentta">
+                                <label for="viesti">Kirjoita lisätietoja</label>
+                                <textarea name="viesti" id="viesti" rows="4" placeholder="Kirjoita viestisi ..."></textarea>
+                            </div>
+                        </fieldset>
+                        <div class="painikkeet">
+                            <button type="submit">Lähetä</button>
+                            <button type="reset" class="tyhjenna">Tyhjennä</button>
+                    </form>
                 </div>
             </section>
         </main>
