@@ -20,11 +20,20 @@
             </section>
         </header>
 
-        <nav class="nav">
-        </nav>
+       <div class="nav">
+            <input type="checkbox" id="valikko-auki" class="valikko-checkbox">
+            <label for="valikko-auki" class="hampurilainen">
+                <span>&#9776</span>
+            </label>
+            <nav class="paavalikko">
+                <a href="#planeetat">Aurinko-infot</a>
+                <a href="#yhteystiedot">Yhteystiedot</a>
+                <a href="#sidebar">Pikalinkit</a>
+            </nav>
+        </div>
 
-        <main class="main">
-            <section class="kappaleet rajaus" id="planeetat">
+        <main class="main" id="planeetat">
+            <section class="kappaleet rajaus">
                 <div class="item item1">
                     <h2 id="aurinko">Aurinko on maapallolle elintärkeä</h2>
                     <p>Maa kiertää aurinkoa ja auringon säteily on maapallolle merkittävä energianlähde</p>
@@ -46,13 +55,13 @@
             </section>
             <section class="video">
                 <div>
-                    <video src="media/aurinkovideo.mp4" width="600" height="400" controls autoplay muted loop
-                        controlslist="nodownload nofullscreen">Aurinko</video>
+                    <video src="media/aurinkovideo.mp4" width="1200" height="1145" controls autoplay muted loop
+                        controlslist="nodownload nofullscreen" alt="video auringosta, ei ääntä">Aurinko</video>
                 </div>
             </section>
         </main>
 
-        <section class="sidebar">
+        <section class="sidebar" id="sidebar">
             <h2>👽Pikalinkit</h2>
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
@@ -62,7 +71,7 @@
             </ul>
         </section>
 
-        <section class="yhteystiedot footer">
+        <section class="yhteystiedot footer" id="yhteystiedot">
             <h2>Yhteystiedot</h2>
             <p> <a href="tel: +358501234567"></a> Jos asiaa soita +358501234567 </p>
             <p> <a href="mailto: johanna.susineva@centria.fi">tai laita sähköpostia</a> </p>

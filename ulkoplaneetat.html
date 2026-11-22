@@ -20,8 +20,17 @@
             </section>
         </header>
 
-        <nav class="nav">
-        </nav>
+        <div class="nav">
+            <input type="checkbox" id="valikko-auki" class="valikko-checkbox">
+            <label for="valikko-auki" class="hampurilainen">
+                <span>&#9776</span>
+            </label>
+            <nav class="paavalikko">
+                <a href="#planeetat">Planeetta-infot</a>
+                <a href="#yhteystiedot">Yhteystiedot</a>
+                <a href="#sidebar">Pikalinkit</a>
+            </nav>
+        </div>
 
         <main class="main">
             <section class="planeetat rajaus" id="planeetat">
@@ -101,19 +110,19 @@
             <section class="karuselli-section">
                 <div class="kuvakaruselli">
                     <figure class="karuselli-item" id="jupiter">
-                        <img src="media/jupiter.jpg" alt="jupiter">
+                        <img src="media/jupiter.jpg" alt="jupiter" width="640" height="640">
                         <figcaption>Jupiter</figcaption>
                     </figure>
                     <figure class="karuselli-item" id="saturnus">
-                        <img src="media/saturnus.jpg" alt="saturnus">
+                        <img src="media/saturnus.jpg" alt="saturnus" width="640" height="640">
                         <figcaption>Saturnus</figcaption>
                     </figure>
                     <figure class="karuselli-item" id="uranus">
-                        <img src="media/uranus.jpg" alt="uranus">
+                        <img src="media/uranus.jpg" alt="uranus" width="640" height="640">
                         <figcaption>Uranus</figcaption>
                     </figure>
                     <figure class="karuselli-item" id="neptunus">
-                        <img src="media/neptunus.jpg" alt="neptunus">
+                        <img src="media/neptunus.jpg" alt="neptunus" width="640" height="640">
                         <figcaption>Neptunus</figcaption>
                     </figure>
                 </div>
@@ -129,7 +138,7 @@
             </section>
         </main>
 
-        <section class="sidebar">
+        <section class="sidebar" id="sidebar">
             <h2>👽Pikalinkit</h2>
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
@@ -139,7 +148,7 @@
             </ul>
         </section>
 
-        <section class="yhteystiedot footer">
+        <section class="yhteystiedot footer" id="yhteystiedot">
             <h2>Yhteystiedot</h2>
             <p> <a href="tel: +358501234567"></a> Jos asiaa soita +358501234567 </p>
             <p> <a href="mailto: johanna.susineva@centria.fi">tai laita sähköpostia</a> </p>

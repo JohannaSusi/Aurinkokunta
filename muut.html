@@ -12,40 +12,166 @@
 <!--Jokin kunnianosoitus plutolle, joka on alennettu planeetoista kääpiöplaneetaksi-->
 
 <body>
-    <header class="header">
-        <section class="hero">
-            <div class="hero-sisalto header-sisalto rajaus">
-                <h1 id="paaotsikko">Muut taivaankappaleet</h1>
-            </div>
+    <div class="areas">
+        <header class="header">
+            <section class="hero">
+                <div class="hero-sisalto header-sisalto rajaus">
+                    <h1 id="paaotsikko">Muut taivaankappaleet</h1>
+                    <p>Muita aurinkokuntamme taivaankappaleita ovat kuut, asteroidit, meteoroidit, komeetat ja kääpiöplaneetat.</p>
+                </div>
+            </section>
+        </header>
+
+        <div class="nav">
+            <input type="checkbox" id="valikko-auki" class="valikko-checkbox">
+            <label for="valikko-auki" class="hampurilainen">
+                <span>&#9776</span>
+            </label>
+            <nav class="paavalikko">
+                <a href="#planeetat">Infot</a>
+                <a href="#yhteystiedot">Yhteystiedot</a>
+                <a href="#sidebar">Pikalinkit</a>
+            </nav>
+        </div>
+
+        <main class="main">
+            <section class="planeetat rajaus" id="planeetat">
+                <div class="kortit">
+                    <article class="kortti">
+                        <h3>Kuut</h3>
+                        <p>Kuu on yleisnimitys planeetan kiertolaiselle.</p>
+                        <ul class="tiedot">
+                            <li>Kaikilla planeetoilla ei ole kuuta.</li>
+                            <li>Myös kuulla voi olla kuu.</li>
+                            <li>Merkuriuksella ja Venuksella ei ole kuita, Maapallolla on yksi, Marsilla kaksi, Jupiterilla, Saturnuksella, Neptunilla ja Uranuksella useita.</li>
+                        </ul>
+                    </article>
+                    <article class="kortti">
+                        <h3>Asteroidit ja meteoroidit</h3>
+                        <p>Asteroidi on isompi ja meteoroidi pienempi.</p>
+                        <ul class="tiedot">
+                            <li>Molemmat ovat aurinkoa kiertäviä metalli- tai kivikappaleita.</li>
+                            <li>Meteoroidi voi olla peräisin hajonneesta asteroidista.</li>
+                            <li>Huom! Meteori on ilmakehässä näkyvä valoilmiö ja meteoriitti maahan asti päätyvä kappale. Näitä ei tule sekoittaa meteoroidiin.</li>
+                        </ul>
+                    </article>
+                    <article class="kortti">
+                        <h3>Komeetat</h3>
+                        <p>Toiselta nimeltä pyrstötähti.</p>
+                        <ul class="tiedot">
+                            <li>Muistuttaa asteroidia, mutta koostuu jäästä.</li>
+                            <li>Ympärillä Auringon irrottama kaasun ja pölyn muodostama pyrstö.</li>
+                            <li>Pyrstö voi olla miljoonia kilometriä pitkä ja osoittaa aina poispäin Auringosta.</li>
+                            <li>Havaitaan vuosittain kymmenkunta.</li>
+                        </ul>
+                    </article>
+                    <article class="kortti">
+                        <h3>Kääpiöplaneetat</h3>
+                        <p>Vuonna 2006 käyttöön otettu määritelmä.</p>
+                        <ul>
+                            <li>Aurinkoa kiertävä kappale, joka on riittävän suuri siihen, että sen oma painovoima muokkaa kappaleen pallonmuotoiseksi.</li>
+                            <li>Kääpiplaneettoja ovat Ceres, Pluto, Eris, Makemake ja Haumea.</li>
+                            <li>Ei tule sekoittaa pikkuplaneettoihin.</li>
+                        </ul>
+                    </article>
+                </div>
+                 <table class="taulukko">
+                    <caption>Ominaisuuksia</caption>
+                    <colgroup>
+                        <col span="3" style="background-color: rgb(208, 208, 241);">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Kääpiöplaneetta</th>
+                            <th>Vuorokauden pituus</th>
+                            <th>Vuoden pituus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ceres</td>
+                            <td>9 h</td>
+                            <td>4.6 v</td>
+                        </tr>
+                        <tr>
+                            <td>Pluto</td>
+                            <td>6 vrk</td>
+                            <td>248 v</td>
+                        </tr>
+                        <tr>
+                            <td>Eris</td>
+                            <td>16 vrk</td>
+                            <td>558 v</td>
+                        </tr>
+                        <tr>
+                            <td>Makemake</td>
+                            <td>23 h</td>
+                            <td>320 v</td>
+                        </tr>
+                        <tr>
+                            <td>Haumea</td>
+                            <td>4 h</td>
+                            <td>285 v</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="karuselli-section">
+                <div class="kuvakaruselli">
+                    <figure class="karuselli-item" id="kuu">
+                        <img src="media/kuu.jpg" alt="meidän kuu" width="640" height="640">
+                        <figcaption>Meidän kuumme</figcaption>
+                    </figure>
+                    <figure class="karuselli-item" id="asteroidi">
+                        <img src="media/asteroidi.png" alt="asteroidi" width="640" height="640">
+                        <figcaption>Asteroidi</figcaption>
+                    </figure>
+                    <figure class="karuselli-item" id="kraateri">
+                        <img src="media/kraateri.jpg" alt="kraateri" width="640" height="640">
+                        <figcaption>Asteroidin tai meteoriitin aiheuttama kraateri</figcaption>
+                    </figure>
+                    <figure class="karuselli-item" id="komeetta">
+                        <img src="media/komeetta.jpg" alt="komeetta" width="640" height="640">
+                        <figcaption>Komeetta</figcaption>
+                    </figure>
+                    <figure class="karuselli-item" id="pluto">
+                        <img src="media/pluto.jpg" alt="pluto">
+                        <figcaption>Pluto</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <nav class="karuselli-nav">
+                        <a href="#kuu">1</a>
+                        <a href="#asteroidi">2</a>
+                        <a href="#kraateri">3</a>
+                        <a href="#komeetta">4</a>
+                        <a href="#pluto">5</a>
+                    </nav>
+                </div>
+
+            </section>
+        </main>
+
+        <section class="sidebar" id="sidebar">
+            <h2>👽Pikalinkit</h2>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="aurinko.html">Aurinko</a></li>
+                <li><a href="ulkoplaneetat.html">Ulkoplaneetat</a></li>
+                <li><a href="muut.html">Muut taivaankappaleet</a></li>
+            </ul>
         </section>
-    </header>
 
-    <nav class="nav">
-    </nav>
+        <section class="yhteystiedot footer" id="yhteystiedot">
+            <h2>Yhteystiedot</h2>
+            <p> <a href="tel: +358501234567"></a> Jos asiaa soita +358501234567 </p>
+            <p> <a href="mailto: johanna.susineva@centria.fi">tai laita sähköpostia</a> </p>
+            <p>&copy; JohannaSusi </p>
+            <p>(Tekstien lähde: Wikipedia, median lähde: Pixabay)</p>
+        </section>
 
-    <main class="main">
-    </main>
-
-    <section class="sidebar">
-        <h2>👽Pikalinkit</h2>
-        <ul>
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="aurinko.html">Aurinko</a></li>
-            <li><a href="sisaplaneetat.html">Sisäplaneetat</a></li>
-            <li><a href="ulkoplaneetat.html">Ulkoplaneetat</a></li>
-        </ul>
-    </section>
-
-    <section class="yhteystiedot footer">
-        <h2>Yhteystiedot</h2>
-        <p> <a href="tel: +358501234567"></a> Jos asiaa soita +358501234567 </p>
-        <p> <a href="mailto: johanna.susineva@centria.fi">tai laita sähköpostia</a> </p>
-        <p>&copy; JohannaSusi </p>
-        <p>(Tekstien lähde: Wikipedia, median lähde: Pixabay)</p>
-    </section>
-    </section>
-
-
+    </div>
 </body>
 
 </html>
